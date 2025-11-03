@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(pnpm create:*)",
+      "Bash(printf:*)",
+      "Bash(pnpm dlx create-next-app@latest:*)",
+      "Bash(tree:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(pnpm info:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
