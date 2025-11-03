@@ -9,40 +9,40 @@ pre-commit:
       glob: "*.{js,ts,cjs,mjs,json}"
       run: pnpm biome ci --colors=off {staged_files}
       env:
-        NO_COLOR: 1
-        FORCE_COLOR: 0
+        NO_COLOR: "1"
+        FORCE_COLOR: "0"
 
     # Biome checks for frontend
     biome-frontend:
       glob: "apps/frontend/**/*.{js,jsx,ts,tsx,json,css}"
       run: pnpm biome ci --colors=off {staged_files}
       env:
-        NO_COLOR: 1
-        FORCE_COLOR: 0
+        NO_COLOR: "1"
+        FORCE_COLOR: "0"
 
     # Biome checks for backend
     biome-backend:
       glob: "apps/backend/**/*.{js,ts,json}"
       run: pnpm biome ci --colors=off {staged_files}
       env:
-        NO_COLOR: 1
-        FORCE_COLOR: 0
+        NO_COLOR: "1"
+        FORCE_COLOR: "0"
 
     # Biome checks for packages
     biome-packages:
       glob: "packages/**/*.{js,ts,json}"
       run: pnpm biome ci --colors=off {staged_files}
       env:
-        NO_COLOR: 1
-        FORCE_COLOR: 0
+        NO_COLOR: "1"
+        FORCE_COLOR: "0"
 
     # TypeScript type checking
     typecheck:
       run: pnpm type-check
       env:
-        NO_COLOR: 1
-        FORCE_COLOR: 0
-        CI: true
+        NO_COLOR: "1"
+        FORCE_COLOR: "0"
+        CI: "true"
 
 commit-msg:
   parallel: false
