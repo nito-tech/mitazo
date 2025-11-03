@@ -1,0 +1,28 @@
+{
+  "name": "mitazo",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@9.15.1",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "prepare": "lefthook install",
+    "dev": "turbo dev",
+    "dev:backend": "pnpm --filter @mitazo/backend dev",
+    "dev:frontend": "pnpm --filter @mitazo/frontend dev",
+    "build": "turbo build",
+    "start": "turbo start",
+    "type-check": "turbo type-check",
+    "lint": "turbo lint",
+    "format": "biome format --write .",
+    "check": "biome check --write ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.2",
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
+    "lefthook": "^1.13.6",
+    "turbo": "^2.5.8"
+  }
+}
